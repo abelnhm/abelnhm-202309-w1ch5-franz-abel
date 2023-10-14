@@ -313,4 +313,158 @@ input[type=reset])[disabled] {
     color: #2d2d2d;
     font-weight: 400;
   }
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #2d2d2d;
+    text-align: center;
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: rgb(248, 249, 255);
+  }
+  .section-3 .section-3-h {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+  }
+  .section-3 .section-3-p {
+    font-family: "Mulish", sans-serif;
+    font-size: 1.2rem;
+    color: #2d2d2d;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .section-3 .section-3-container-cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    gap: 1.875rem;
+  }
+  .section-3 .section-3-container-cards .section-3-card-1,
+  .section-3 .section-3-container-cards .section-3-card-2,
+  .section-3 .section-3-container-cards .section-3-card-3 {
+    background: #fff;
+    border-radius: 20px;
+  }
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-img,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-img,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-img,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-img,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-img,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-img,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-img,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-img,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-img {
+    border-radius: 20px 20px 0 0;
+  }
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-container,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-container,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-container,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-container,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-container,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-container,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-container,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-container,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-container .section-3-card-1-container-title,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-container .section-3-card-2-container-title,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-container .section-3-card-3-container-title,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-container .section-3-card-1-container-title,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-container .section-3-card-2-container-title,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-container .section-3-card-3-container-title,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-container .section-3-card-1-container-title,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-container .section-3-card-2-container-title,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-container .section-3-card-3-container-title,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-container .section-3-card-1-container-title,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-container .section-3-card-2-container-title,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-container .section-3-card-3-container-title,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-container .section-3-card-1-container-title,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-container .section-3-card-2-container-title,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-container .section-3-card-3-container-title,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-container .section-3-card-1-container-title,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-container .section-3-card-2-container-title,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-container .section-3-card-3-container-title,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-container .section-3-card-1-container-title,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-container .section-3-card-2-container-title,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-container .section-3-card-3-container-title,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-container .section-3-card-1-container-title,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-container .section-3-card-2-container-title,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-container .section-3-card-3-container-title,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-container .section-3-card-1-container-title,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-container .section-3-card-2-container-title,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-container .section-3-card-3-container-title {
+    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.75rem;
+  }
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-container .section-3-card-1-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-container .section-3-card-1-container-category,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-container .section-3-card-2-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-container .section-3-card-2-container-category,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-container .section-3-card-3-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-1-container .section-3-card-3-container-category,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-container .section-3-card-1-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-container .section-3-card-1-container-category,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-container .section-3-card-2-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-container .section-3-card-2-container-category,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-container .section-3-card-3-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-2-container .section-3-card-3-container-category,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-container .section-3-card-1-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-container .section-3-card-1-container-category,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-container .section-3-card-2-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-container .section-3-card-2-container-category,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-container .section-3-card-3-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-1 .section-3-card-3-container .section-3-card-3-container-category,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-container .section-3-card-1-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-container .section-3-card-1-container-category,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-container .section-3-card-2-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-container .section-3-card-2-container-category,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-container .section-3-card-3-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-1-container .section-3-card-3-container-category,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-container .section-3-card-1-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-container .section-3-card-1-container-category,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-container .section-3-card-2-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-container .section-3-card-2-container-category,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-container .section-3-card-3-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-2-container .section-3-card-3-container-category,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-container .section-3-card-1-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-container .section-3-card-1-container-category,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-container .section-3-card-2-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-container .section-3-card-2-container-category,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-container .section-3-card-3-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-2 .section-3-card-3-container .section-3-card-3-container-category,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-container .section-3-card-1-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-container .section-3-card-1-container-category,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-container .section-3-card-2-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-container .section-3-card-2-container-category,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-container .section-3-card-3-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-1-container .section-3-card-3-container-category,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-container .section-3-card-1-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-container .section-3-card-1-container-category,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-container .section-3-card-2-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-container .section-3-card-2-container-category,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-container .section-3-card-3-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-2-container .section-3-card-3-container-category,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-container .section-3-card-1-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-container .section-3-card-1-container-category,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-container .section-3-card-2-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-container .section-3-card-2-container-category,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-container .section-3-card-3-container-subtitle,
+  .section-3 .section-3-container-cards .section-3-card-3 .section-3-card-3-container .section-3-card-3-container-category {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
 }
