@@ -1,0 +1,18 @@
+{
+  "name": "abelnhm-202309-w1ch5-franz-abel",
+  "version": "1.0.0",
+  "description": "week 1 - challenge 5",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss:css -w --no-source-map",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "Franz - Abel",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "sass": "^1.69.3"
+  }
+}

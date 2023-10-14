@@ -1,0 +1,43 @@
+//BASE VALUES
+
+//COLORS
+$white: #ffffff;
+$grey: #4e4d4d;
+$black: #2d2d2d;
+$green-dark: #009379;
+$green-ligth: #e5f4f2;
+$yellow: #f8d57e;
+$orange: #f3ccc2;
+
+//FONTS
+$mulish: "Mulish", sans-serif;
+$poppins: "Poppins", sans-serif;
+
+//FONT-SIZE ELEMENT TYPE H
+$size_h_2xl: 5.625rem;
+$size_h_xl: 4.188rem;
+$size_h_l: 3.125rem;
+$size_h_m: 2.375rem;
+$size_h_s: 1.75rem;
+$size_h_xs: 1.75rem;
+
+//WEIGHT ELEMENT TYPE H
+$weight_h_bold: 700;
+$weight_h_semibold: 600;
+
+//FONT-SIZE ELEMENT TYPE TEXT
+$size_text_xl: 1.75rem;
+$size_text_l: 1.313rem;
+$size_text_m: 1rem;
+$size_text_s: 0.875rem;
+
+//WEIGHT ELEMENT TYPE text
+$weight_text_regular: 400;
+
+//BORDERS
+$border-radius: 1.25;
+
+//SHADOW
+@mixin shadow() {
+  box-shadow: 34px 29px 48px 0px rgba(51, 102, 255, 0.05);
+}
