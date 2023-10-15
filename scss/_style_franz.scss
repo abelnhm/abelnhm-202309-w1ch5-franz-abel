@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f8f9ff;
+}
+
 @media (min-width: 375px) {
   .business-plans {
     background-color: #f8f9ff;
@@ -166,6 +170,17 @@
 
 .container-statistic-list-one {
   display: flex;
+  margin-bottom: 2rem;
+}
+
+.container-item-list {
+  border: 4px solid transparent;
+  border-left-color: $orange;
+}
+
+.container-statistic-list-o-two {
+  border: 4px solid transparent;
+  border-left-color: $orange;
 }
 
 .container-statistic-list-two {
@@ -174,4 +189,38 @@
 
 .h1-contact {
   text-align: center;
+  padding-top: 2rem;
+  font-family: $poppins;
+  font-size: $size_h_m;
+  text-align: left;
 }
+
+.lets-get-in-touch {
+  padding-inline: 2rem;
+}
+
+.section-container {
+  padding-inline: 2rem;
+  padding-bottom: 4px;
+  border-radius: 20px;
+  @include shadow;
+  background-color: #ffffff;
+  color: $black;
+  margin-top: 2rem;
+}
+
+.p-lets-get-in-touch {
+  font-family: $mulish;
+  font-weight: $size_h_m;
+  font-size: $size_text_m;
+  text-align: left;
+}
+
+/* padding-inline: 2rem;
+padding-top: 3rem;
+padding-bottom: 4px;
+border-radius: 20px;
+@include shadow;
+background-color: white;
+margin-top: 2rem;
+ */
