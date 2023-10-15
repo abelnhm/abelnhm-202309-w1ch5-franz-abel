@@ -1,7 +1,418 @@
 @import "base";
 
+.header-mobile {
+  display: none;
+}
+.header-desktop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  color: $black;
+  background: $white;
+  padding: 20px 50px;
+
+  .header-desktop-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  p {
+    font-family: $poppins;
+    font-weight: 400;
+    gap: 0.2rem;
+
+    & :nth-child(1) {
+      font-weight: $weight_h_bold;
+    }
+
+    & :nth-child(2) {
+      margin-left: -2px;
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 1.2rem;
+
+      li {
+        cursor: pointer;
+      }
+
+      &:nth-child(1) {
+        color: $green-dark;
+        font-size: 16px;
+        font-family: $poppins;
+        font-weight: $weight_h_semibold;
+      }
+
+      li:nth-child(1) > a {
+        margin-right: 4rem;
+      }
+
+      & :nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $green-dark;
+        background: $green-ligth;
+        border-radius: 20px;
+        padding: 18px 50px;
+        font-size: 16px;
+        font-family: $poppins;
+        font-weight: $weight_h_semibold;
+        width: 221px;
+        @include shadow;
+      }
+
+      & :nth-child(3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $white;
+        background: $green-dark;
+        border-radius: 20px;
+        padding: 18px 50px;
+        font-size: 16px;
+        font-family: $poppins;
+        font-weight: $weight_h_semibold;
+        width: 221px;
+        @include shadow;
+      }
+    }
+  }
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: $size_h_xs;
+  font-weight: $weight_h_bold;
+  font-family: $poppins;
+  color: $black;
+
+  padding: 30px;
+  padding-bottom: 120px;
+  background: $white;
+
+  gap: 5rem;
+
+  .section-1-content-left {
+    .section-1-h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      font-weight: $weight_h_bold;
+      font-size: $size_h_l;
+    }
+
+    p {
+      font-family: $mulish;
+      font-size: $size_text_m;
+      color: $black;
+      font-weight: $weight_text_regular;
+      margin-bottom: 30px;
+    }
+
+    .section-1-btns {
+      gap: 1rem;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .section-1-a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $white;
+        background: $green-dark;
+        border-radius: 20px;
+        padding: 18px 50px;
+        font-size: 16px;
+        font-family: $poppins;
+        font-weight: $weight_h_semibold;
+        width: 221px;
+        margin-bottom: 40px;
+        @include shadow;
+
+        &:hover {
+        }
+      }
+
+      .section-1-a-2 {
+        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $green-dark;
+        border: 1px solid $green-dark;
+        background: #fff;
+        border-radius: 20px;
+        padding: 18px 50px;
+        font-size: 16px;
+        font-family: $poppins;
+        font-weight: $weight_h_semibold;
+        width: 221px;
+        margin-bottom: 40px;
+        @include shadow;
+
+        &:hover {
+        }
+      }
+    }
+  }
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: $size_h_xs;
+  font-weight: $weight_h_bold;
+  font-family: $poppins;
+  color: $black;
+  text-align: center;
+  padding: 30px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: $white;
+  gap: 1rem;
+
+  .section-2-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .section-2-h {
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+    }
+
+    .section-2-p {
+      font-family: $mulish;
+      font-size: 1.2rem;
+      color: $black;
+      font-weight: $weight_text_regular;
+      margin-bottom: 50px;
+      text-align: left;
+    }
+
+    .section-2-container-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+
+      .section-2-card-1,
+      .section-2-card-2,
+      .section-2-card-3,
+      .section-2-card-4 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        gap: 1rem;
+        background: #fff;
+        border-radius: $border-radius;
+        @include shadow;
+
+        img {
+          padding: 12.2px;
+          background: $green-ligth;
+          border-radius: 12.2px;
+        }
+
+        p {
+          font-family: $mulish;
+          font-size: 1.2rem;
+          color: $black;
+          font-weight: $weight_text_regular;
+        }
+      }
+    }
+  }
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: $size_h_xs;
+  font-weight: $weight_h_bold;
+  font-family: $poppins;
+  color: $black;
+  text-align: center;
+  padding: 30px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: $white;
+
+  .section-3-h {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+  }
+
+  .section-3-p {
+    font-family: $mulish;
+    font-size: 1.2rem;
+    color: $black;
+    font-weight: $weight_text_regular;
+    margin-bottom: 60px;
+  }
+
+  .section-3-container-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1.875rem;
+
+    .section-3-card-1,
+    .section-3-card-2,
+    .section-3-card-3 {
+      background: #fff;
+      border-radius: 20px;
+      @include shadow;
+
+      .section-3-card-1-img,
+      .section-3-card-2-img,
+      .section-3-card-3-img {
+        border-radius: 20px 20px 0 0;
+      }
+      .section-3-card-1-container,
+      .section-3-card-2-container,
+      .section-3-card-3-container {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+
+        .section-3-card-1-container-title,
+        .section-3-card-2-container-title,
+        .section-3-card-3-container-title {
+          font-size: 1rem;
+          font-weight: $weight_h_semibold;
+          font-size: $size_h_s;
+        }
+        .section-3-card-1-container-subtitle,
+        .section-3-card-1-container-category,
+        .section-3-card-2-container-subtitle,
+        .section-3-card-2-container-category,
+        .section-3-card-3-container-subtitle,
+        .section-3-card-3-container-category {
+          font-family: $mulish;
+          font-weight: $weight_text_regular;
+          font-size: $size_text_m;
+        }
+      }
+    }
+  }
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: $size_h_xs;
+  font-weight: $weight_h_bold;
+  font-family: $poppins;
+  color: $black;
+  text-align: center;
+  padding: 30px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: $yellow;
+
+  .section-4-h {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+  }
+
+  .section-4-p {
+    font-family: $mulish;
+    font-size: 1.2rem;
+    color: $black;
+    font-weight: $weight_text_regular;
+    margin-bottom: 50px;
+  }
+
+  .section-4-container-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+
+    .section-4-card-1,
+    .section-4-card-2 {
+      padding: 40px;
+      background: #fff;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      @include shadow;
+
+      .section-4-card-1-img,
+      .section-4-card-2-img {
+        margin-bottom: 1rem;
+      }
+
+      .section-4-card-1-p-1,
+      .section-4-card-2-p-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+
+        .section-4-card-1-p-1-span-1,
+        .section-4-card-2-p-1-span-1 {
+          font-size: 1.5rem;
+        }
+        .section-4-card-1-p-1-span-2,
+        .section-4-card-2-p-1-span-2 {
+          font-family: $mulish;
+          font-weight: $weight_text_regular;
+          font-size: $size_text_m;
+        }
+      }
+      .section-4-card-1-p-2,
+      .section-4-card-2-p-2 {
+        font-size: 1rem;
+        font-family: $mulish;
+        font-weight: $weight_text_regular;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-4-card-1-div,
+      .section-4-card-2-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
 @media (width <= 375px) {
-  .header {
+  .header-desktop {
+    display: none;
+  }
+  .header-mobile {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -39,36 +450,48 @@
     padding-bottom: 60px;
     background: $white;
 
-    .section-1-h1 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-family: $mulish;
-      font-size: $size_text_m;
-      color: $black;
-      font-weight: $weight_text_regular;
-      margin-bottom: 30px;
-    }
-
-    .section-1-a {
+    .section-1-content-left {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      text-decoration: none;
-      color: $white;
-      background: $green-dark;
-      border-radius: 20px;
-      padding: 18px 50px;
-      font-size: 16px;
-      font-family: $poppins;
-      font-weight: $weight_h_semibold;
-      width: 221px;
-      margin-bottom: 40px;
-      @include shadow;
 
-      &:hover {
+      .section-1-h1 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: $mulish;
+        font-size: $size_text_m;
+        color: $black;
+        font-weight: $weight_text_regular;
+        margin-bottom: 30px;
+      }
+
+      .section-1-btns {
+        .section-1-a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: $white;
+          background: $green-dark;
+          border-radius: 20px;
+          padding: 18px 50px;
+          font-size: 16px;
+          font-family: $poppins;
+          font-weight: $weight_h_semibold;
+          width: 221px;
+          margin-bottom: 40px;
+          @include shadow;
+
+          &:hover {
+          }
+        }
+
+        .section-1-a-2 {
+          display: none;
+        }
       }
     }
   }
