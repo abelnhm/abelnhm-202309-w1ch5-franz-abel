@@ -1,7 +1,7 @@
 //BASE VALUES
 
 //COLORS
-$white: #ffffff;
+$white: rgba(248, 249, 255, 1);
 $grey: #4e4d4d;
 $black: #2d2d2d;
 $green-dark: #009379;
@@ -35,7 +35,7 @@ $size_text_s: 0.875rem;
 $weight_text_regular: 400;
 
 //BORDERS
-$border-radius: 1.25;
+$border-radius: 1.25rem;
 
 //SHADOW
 @mixin shadow() {
