@@ -1,1 +1,177 @@
 @import "base";
+
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 375px) {
+  .business-plans {
+    background-color: #f8f9ff;
+    padding-inline: 2rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .h1-perfect-plan {
+    font-family: $mulish;
+    font-weight: 800;
+    font-size: $size_h_m;
+    text-align: center;
+    padding-top: 3.5rem;
+  }
+
+  .container-list {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .check-box-container {
+    gap: 1rem;
+  }
+
+  .get-started-button-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $green-dark;
+    background: $green-ligth;
+    border-radius: 20px;
+    padding: 14px 50px;
+    font-size: 16px;
+    font-family: $poppins;
+    font-weight: $weight_h_semibold;
+    width: 221px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    @include shadow;
+  }
+
+  .bussines-plan-promo {
+    font-family: $mulish;
+    font-weight: $weight_text_regular;
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .plan-title {
+    font-family: $mulish;
+    font-size: $size_text_l;
+    font-weight: $weight_text_regular;
+  }
+
+  .price-plan {
+    font-family: $poppins;
+    font-size: $size_h_l;
+    font-weight: $weight_h_bold;
+    color: $black;
+    span {
+      font-family: $mulish;
+      font-size: $size_text_m;
+    }
+  }
+
+  .p-recomendation {
+    font-family: $mulish;
+    font-size: $size_text_m;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .list-of-features {
+    font-family: $mulish;
+    font-weight: $weight_h_bold;
+    list-style-type: none;
+  }
+}
+
+.plan-tipe-1 {
+  padding-inline: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4px;
+  border-radius: 20px;
+  @include shadow;
+  background-color: white;
+}
+
+.plan-tipe-2 {
+  padding-inline: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4px;
+  border-radius: 20px;
+  @include shadow;
+  background-color: white;
+  margin-top: 2rem;
+}
+
+.main-title {
+  background-color: #f8f9ff;
+}
+
+.enterprise-plan {
+  padding-inline: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4px;
+  border-radius: 20px;
+  @include shadow;
+  background-color: $green-dark;
+  color: white;
+  margin-top: 2rem;
+}
+
+.price-plan-enterprise {
+  font-family: $poppins;
+  font-size: $size_h_l;
+  font-weight: 650;
+  color: $white;
+  span {
+    font-family: $mulish;
+    font-size: $size_text_m;
+  }
+}
+
+.h1-metrics {
+  font-family: $poppins;
+  font-weight: $weight_h_bold;
+  font-size: $size_h_m;
+  text-align: center;
+}
+
+.section-metrics {
+  padding-top: 3.5rem;
+  padding-inline: 2rem;
+  background-color: #f8f9ff;
+}
+
+.p-extra-info {
+  font-family: $mulish;
+  font-size: $size_text_m;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.stadistics-numbers {
+  font-family: $poppins;
+  font-size: $size_h_m;
+  font-weight: $weight_h_bold;
+  span {
+    font-size: $mulish;
+    font-size: $size_text_m;
+    font-weight: $weight_text_regular;
+  }
+}
+
+.container-statistic-list-one {
+  display: flex;
+}
+
+.container-statistic-list-two {
+  display: flex;
+}
+
+.h1-contact {
+  text-align: center;
+}

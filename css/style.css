@@ -188,3 +188,169 @@ input[type=submit],
 input[type=reset])[disabled] {
   cursor: not-allowed;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 375px) {
+  .business-plans {
+    background-color: #f8f9ff;
+    padding-inline: 2rem;
+    padding-bottom: 3.5rem;
+  }
+  .h1-perfect-plan {
+    font-family: "Mulish", sans-serif;
+    font-weight: 800;
+    font-size: 2.375rem;
+    text-align: center;
+    padding-top: 3.5rem;
+  }
+  .container-list {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .check-box-container {
+    gap: 1rem;
+  }
+  .get-started-button-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #009379;
+    background: #e5f4f2;
+    border-radius: 20px;
+    padding: 14px 50px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    width: 221px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    box-shadow: 34px 29px 48px 0px rgba(51, 102, 255, 0.05);
+  }
+  .bussines-plan-promo {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .plan-title {
+    font-family: "Mulish", sans-serif;
+    font-size: 1.313rem;
+    font-weight: 400;
+  }
+  .price-plan {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: #2d2d2d;
+  }
+  .price-plan span {
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+  }
+  .p-recomendation {
+    font-family: "Mulish", sans-serif;
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .list-of-features {
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    list-style-type: none;
+  }
+}
+.plan-tipe-1 {
+  padding-inline: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4px;
+  border-radius: 20px;
+  box-shadow: 34px 29px 48px 0px rgba(51, 102, 255, 0.05);
+  background-color: white;
+}
+
+.plan-tipe-2 {
+  padding-inline: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4px;
+  border-radius: 20px;
+  box-shadow: 34px 29px 48px 0px rgba(51, 102, 255, 0.05);
+  background-color: white;
+  margin-top: 2rem;
+}
+
+.main-title {
+  background-color: #f8f9ff;
+}
+
+.enterprise-plan {
+  padding-inline: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4px;
+  border-radius: 20px;
+  box-shadow: 34px 29px 48px 0px rgba(51, 102, 255, 0.05);
+  background-color: #009379;
+  color: white;
+  margin-top: 2rem;
+}
+
+.price-plan-enterprise {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 650;
+  color: #ffffff;
+}
+.price-plan-enterprise span {
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+}
+
+.h1-metrics {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.375rem;
+  text-align: center;
+}
+
+.section-metrics {
+  padding-top: 3.5rem;
+  padding-inline: 2rem;
+  background-color: #f8f9ff;
+}
+
+.p-extra-info {
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.stadistics-numbers {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.375rem;
+  font-weight: 700;
+}
+.stadistics-numbers span {
+  font-size: "Mulish", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.container-statistic-list-one {
+  display: flex;
+}
+
+.container-statistic-list-two {
+  display: flex;
+}
+
+.h1-contact {
+  text-align: center;
+}
