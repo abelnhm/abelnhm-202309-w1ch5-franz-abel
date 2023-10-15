@@ -14,13 +14,13 @@
   background: $white;
   padding: 20px 50px;
 
-  .header-desktop-logo {
+  .header-desktop__logo {
     display: flex;
     align-items: center;
     flex-direction: row;
   }
 
-  p {
+  .header-desktop__p {
     font-family: $poppins;
     font-weight: 400;
     gap: 0.2rem;
@@ -34,8 +34,8 @@
     }
   }
 
-  nav {
-    ul {
+  .nav {
+    .nav__ul {
       list-style: none;
       display: flex;
       flex-direction: row;
@@ -43,51 +43,49 @@
       flex-wrap: nowrap;
       gap: 1.2rem;
 
-      li {
+      .nav__li {
         cursor: pointer;
-      }
 
-      &:nth-child(1) {
-        color: $green-dark;
-        font-size: 16px;
-        font-family: $poppins;
-        font-weight: $weight_h_semibold;
-      }
+        .nav__a-contact {
+          color: $green-dark;
+          font-size: 16px;
+          font-family: $poppins;
+          font-weight: $weight_h_semibold;
+          margin-right: 4rem;
+          text-decoration: none;
+        }
 
-      li:nth-child(1) > a {
-        margin-right: 4rem;
-      }
+        .nav__a-works {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: $green-dark;
+          background: $green-ligth;
+          border-radius: 20px;
+          padding: 18px 50px;
+          font-size: 16px;
+          font-family: $poppins;
+          font-weight: $weight_h_semibold;
+          width: 221px;
+          @include shadow;
+        }
 
-      & :nth-child(2) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: $green-dark;
-        background: $green-ligth;
-        border-radius: 20px;
-        padding: 18px 50px;
-        font-size: 16px;
-        font-family: $poppins;
-        font-weight: $weight_h_semibold;
-        width: 221px;
-        @include shadow;
-      }
-
-      & :nth-child(3) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: $white;
-        background: $green-dark;
-        border-radius: 20px;
-        padding: 18px 50px;
-        font-size: 16px;
-        font-family: $poppins;
-        font-weight: $weight_h_semibold;
-        width: 221px;
-        @include shadow;
+        .nav__a-started {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: $white;
+          background: $green-dark;
+          border-radius: 20px;
+          padding: 18px 50px;
+          font-size: 16px;
+          font-family: $poppins;
+          font-weight: $weight_h_semibold;
+          width: 221px;
+          @include shadow;
+        }
       }
     }
   }
@@ -101,22 +99,20 @@
   font-weight: $weight_h_bold;
   font-family: $poppins;
   color: $black;
-
   padding: 30px;
   padding-bottom: 120px;
   background: $white;
-
   gap: 5rem;
 
-  .section-1-content-left {
-    .section-1-h1 {
+  .section-1__div--left {
+    .section-1__h1 {
       font-size: 2.2rem;
       margin-bottom: 20px;
       font-weight: $weight_h_bold;
       font-size: $size_h_l;
     }
 
-    p {
+    .section-1__p {
       font-family: $mulish;
       font-size: $size_text_m;
       color: $black;
@@ -124,14 +120,14 @@
       margin-bottom: 30px;
     }
 
-    .section-1-btns {
+    .container-buttons {
       gap: 1rem;
       display: flex;
       align-items: center;
       flex-direction: row;
       flex-wrap: wrap;
 
-      .section-1-a {
+      .container-buttons__a--left {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -151,7 +147,7 @@
         }
       }
 
-      .section-1-a-2 {
+      .container-buttons__a--right {
         display: none;
         display: flex;
         justify-content: center;
@@ -191,7 +187,7 @@
   background: $white;
   gap: 1rem;
 
-  .section-2-content-left {
+  .section-2__div--left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -201,7 +197,7 @@
       font-size: 2.2rem;
     }
 
-    .section-2-p {
+    .section-2__p {
       font-family: $mulish;
       font-size: 1.2rem;
       color: $black;
@@ -210,19 +206,23 @@
       text-align: left;
     }
 
-    .section-2-container-cards {
+    .container-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      /*
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
       width: 100%;
+      */
 
-      .section-2-card-1,
-      .section-2-card-2,
-      .section-2-card-3,
-      .section-2-card-4 {
+      .container-cards__div {
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex: 1;
         padding: 20px;
         width: 100%;
         gap: 1rem;
@@ -230,13 +230,13 @@
         border-radius: $border-radius;
         @include shadow;
 
-        img {
+        .container-cards__img {
           padding: 12.2px;
           background: $green-ligth;
           border-radius: 12.2px;
         }
 
-        p {
+        .container-cards__p {
           font-family: $mulish;
           font-size: 1.2rem;
           color: $black;
@@ -261,12 +261,12 @@
   padding-bottom: 120px;
   background: $white;
 
-  .section-3-h {
+  .section-3__h2 {
     margin-bottom: 20px;
     font-size: 2.2rem;
   }
 
-  .section-3-p {
+  .section-3__p {
     font-family: $mulish;
     font-size: 1.2rem;
     color: $black;
@@ -274,46 +274,33 @@
     margin-bottom: 60px;
   }
 
-  .section-3-container-cards {
+  .container-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 1.875rem;
 
-    .section-3-card-1,
-    .section-3-card-2,
-    .section-3-card-3 {
+    .container-cards__div {
       background: #fff;
       border-radius: 20px;
       @include shadow;
 
-      .section-3-card-1-img,
-      .section-3-card-2-img,
-      .section-3-card-3-img {
+      .container-cards__img {
         border-radius: 20px 20px 0 0;
       }
-      .section-3-card-1-container,
-      .section-3-card-2-container,
-      .section-3-card-3-container {
+      .container-card {
         padding: 30px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 0.8rem;
 
-        .section-3-card-1-container-title,
-        .section-3-card-2-container-title,
-        .section-3-card-3-container-title {
+        .container-card__h3 {
           font-size: 1rem;
           font-weight: $weight_h_semibold;
           font-size: $size_h_s;
         }
-        .section-3-card-1-container-subtitle,
-        .section-3-card-1-container-category,
-        .section-3-card-2-container-subtitle,
-        .section-3-card-2-container-category,
-        .section-3-card-3-container-subtitle,
-        .section-3-card-3-container-category {
+        .container-card__p {
           font-family: $mulish;
           font-weight: $weight_text_regular;
           font-size: $size_text_m;
@@ -337,12 +324,12 @@
   padding-bottom: 120px;
   background: $yellow;
 
-  .section-4-h {
+  .section-4__h2 {
     margin-bottom: 20px;
     font-size: 2.2rem;
   }
 
-  .section-4-p {
+  .section-4__p {
     font-family: $mulish;
     font-size: 1.2rem;
     color: $black;
@@ -350,13 +337,12 @@
     margin-bottom: 50px;
   }
 
-  .section-4-container-cards {
+  .container-cards {
     display: flex;
     flex-direction: row;
     gap: 4rem;
 
-    .section-4-card-1,
-    .section-4-card-2 {
+    .container-cards__div {
       padding: 40px;
       background: #fff;
       border-radius: 20px;
@@ -366,39 +352,31 @@
       align-items: center;
       @include shadow;
 
-      .section-4-card-1-img,
-      .section-4-card-2-img {
+      .container-cards__img {
         margin-bottom: 1rem;
       }
 
-      .section-4-card-1-p-1,
-      .section-4-card-2-p-1 {
+      .container-cards__p {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin-bottom: 2rem;
+        font-size: 1rem;
+        font-family: $mulish;
+        font-weight: $weight_text_regular;
+        margin-bottom: 1.5rem;
 
-        .section-4-card-1-p-1-span-1,
-        .section-4-card-2-p-1-span-1 {
+        .container-cards__span-1 {
           font-size: 1.5rem;
         }
-        .section-4-card-1-p-1-span-2,
-        .section-4-card-2-p-1-span-2 {
+        .container-cards__span-2 {
           font-family: $mulish;
           font-weight: $weight_text_regular;
           font-size: $size_text_m;
         }
       }
-      .section-4-card-1-p-2,
-      .section-4-card-2-p-2 {
-        font-size: 1rem;
-        font-family: $mulish;
-        font-weight: $weight_text_regular;
-        margin-bottom: 1.5rem;
-      }
 
-      .section-4-card-1-div,
-      .section-4-card-2-div {
+      .container-cards__div-stars {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -423,16 +401,16 @@
     color: $black;
     background: $white;
 
-    p {
+    .header-mobile__p {
       font-family: $poppins;
       font-weight: 400;
       gap: 0.2rem;
 
-      & :nth-child(1) {
+      & .header-mobile__span-1 {
         font-weight: $weight_h_bold;
       }
 
-      & :nth-child(2) {
+      & .header-mobile__span-2 {
         margin-left: -2px;
       }
     }
@@ -451,17 +429,17 @@
     padding-bottom: 60px;
     background: $white;
 
-    .section-1-content-left {
+    .section-1__div--left {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      .section-1-h1 {
+      .section-1__h1 {
         font-size: 2.2rem;
         margin-bottom: 20px;
       }
 
-      p {
+      .section-1__p {
         font-family: $mulish;
         font-size: $size_text_m;
         color: $black;
@@ -469,8 +447,8 @@
         margin-bottom: 30px;
       }
 
-      .section-1-btns {
-        .section-1-a {
+      .container-buttons {
+        .container-buttons__a--left {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -490,7 +468,7 @@
           }
         }
 
-        .section-1-a-2 {
+        .container-buttons__a--right {
           display: none;
         }
       }
@@ -511,12 +489,12 @@
     padding-bottom: 60px;
     background: $white;
 
-    .section-2-h {
+    .section-2__h2 {
       margin-bottom: 20px;
       font-size: 2.2rem;
     }
 
-    .section-2-p {
+    .section-2__p {
       font-family: $mulish;
       font-size: 1.2rem;
       color: $black;
@@ -524,7 +502,7 @@
       margin-bottom: 50px;
     }
 
-    .section-2-container-cards {
+    .container-cards {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -532,13 +510,11 @@
       gap: 1rem;
       padding-bottom: 60px;
 
-      .section-2-card-1,
-      .section-2-card-2,
-      .section-2-card-3,
-      .section-2-card-4 {
+      .container-cards__div {
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex: none;
         padding: 20px;
         width: 100%;
         gap: 1rem;
@@ -546,13 +522,13 @@
         border-radius: $border-radius;
         @include shadow;
 
-        img {
+        .container-cards__img {
           padding: 12.2px;
           background: $green-ligth;
           border-radius: 12.2px;
         }
 
-        p {
+        .container-cards__p {
           font-family: $mulish;
           font-size: 1.2rem;
           color: $black;
@@ -576,12 +552,12 @@
     padding-bottom: 60px;
     background: $white;
 
-    .section-3-h {
+    .section-3__h2 {
       margin-bottom: 20px;
       font-size: 2.2rem;
     }
 
-    .section-3-p {
+    .section-3__p {
       font-family: $mulish;
       font-size: 1.2rem;
       color: $black;
@@ -589,7 +565,7 @@
       margin-bottom: 30px;
     }
 
-    .section-3-container-cards {
+    .container-cards {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -597,40 +573,27 @@
       align-items: flex-start;
       gap: 1.875rem;
 
-      .section-3-card-1,
-      .section-3-card-2,
-      .section-3-card-3 {
+      .container-cards__div {
         background: #fff;
         border-radius: 20px;
         @include shadow;
 
-        .section-3-card-1-img,
-        .section-3-card-2-img,
-        .section-3-card-3-img {
+        .container-cards__img {
           border-radius: 20px 20px 0 0;
         }
-        .section-3-card-1-container,
-        .section-3-card-2-container,
-        .section-3-card-3-container {
+        .container-card {
           padding: 30px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           gap: 0.8rem;
 
-          .section-3-card-1-container-title,
-          .section-3-card-2-container-title,
-          .section-3-card-3-container-title {
+          .container-card__h3 {
             font-size: 1rem;
             font-weight: $weight_h_semibold;
             font-size: $size_h_s;
           }
-          .section-3-card-1-container-subtitle,
-          .section-3-card-1-container-category,
-          .section-3-card-2-container-subtitle,
-          .section-3-card-2-container-category,
-          .section-3-card-3-container-subtitle,
-          .section-3-card-3-container-category {
+          .container-card__p {
             font-family: $mulish;
             font-weight: $weight_text_regular;
             font-size: $size_text_m;
@@ -654,12 +617,12 @@
     padding-bottom: 100px;
     background: $yellow;
 
-    .section-4-h {
+    .section-4__h2 {
       margin-bottom: 20px;
       font-size: 2.2rem;
     }
 
-    .section-4-p {
+    .section-4__p {
       font-family: $mulish;
       font-size: 1.2rem;
       color: $black;
@@ -667,14 +630,13 @@
       margin-bottom: 50px;
     }
 
-    .section-4-container-cards {
+    .container-cards {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       gap: 4rem;
 
-      .section-4-card-1,
-      .section-4-card-2 {
+      .container-cards__div {
         padding: 40px;
         background: #fff;
         border-radius: 20px;
@@ -684,39 +646,33 @@
         align-items: center;
         @include shadow;
 
-        .section-4-card-1-img,
-        .section-4-card-2-img {
+        .scontainer-cards__img {
           margin-bottom: 1rem;
         }
 
-        .section-4-card-1-p-1,
-        .section-4-card-2-p-1 {
+        .scontainer-cards__p {
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
           margin-bottom: 2rem;
 
-          .section-4-card-1-p-1-span-1,
-          .section-4-card-2-p-1-span-1 {
+          .container-cards__span-1 {
             font-size: 1.5rem;
           }
-          .section-4-card-1-p-1-span-2,
-          .section-4-card-2-p-1-span-2 {
+          .container-cards__span-2 {
             font-family: $mulish;
             font-weight: $weight_text_regular;
             font-size: $size_text_m;
           }
         }
-        .section-4-card-1-p-2,
-        .section-4-card-2-p-2 {
+        .container-cards__p {
           font-size: 1rem;
           font-family: $mulish;
           font-weight: $weight_text_regular;
           margin-bottom: 1.5rem;
         }
 
-        .section-4-card-1-div,
-        .section-4-card-2-div {
+        .container-cards__div-stars {
           display: flex;
           flex-direction: row;
           flex-wrap: nowrap;
