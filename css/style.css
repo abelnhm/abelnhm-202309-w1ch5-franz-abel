@@ -390,16 +390,28 @@ body {
 
 .p-lets-get-in-touch {
   font-family: "Mulish", sans-serif;
-  font-weight: 2.375rem;
+  font-weight: 400;
   font-size: 1rem;
   text-align: left;
 }
 
-/* padding-inline: 2rem;
-padding-top: 3rem;
-padding-bottom: 4px;
-border-radius: 20px;
-@include shadow;
-background-color: white;
-margin-top: 2rem;
- */
+.main-container-1,
+.main-container-2 {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.313rem;
+  padding-top: 1.5rem;
+}
+
+.icons-container {
+  display: flex;
+}

@@ -211,16 +211,28 @@ body {
 
 .p-lets-get-in-touch {
   font-family: $mulish;
-  font-weight: $size_h_m;
+  font-weight: $weight_text_regular;
   font-size: $size_text_m;
   text-align: left;
 }
 
-/* padding-inline: 2rem;
-padding-top: 3rem;
-padding-bottom: 4px;
-border-radius: 20px;
-@include shadow;
-background-color: white;
-margin-top: 2rem;
- */
+.main-container-1,
+.main-container-2 {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  font-family: $mulish;
+  font-weight: $weight_text_regular;
+  font-size: $size_text_m;
+}
+
+.p {
+  font-family: $poppins;
+  font-weight: $weight_h_semibold;
+  font-size: $size_text_l;
+  padding-top: 1.5rem;
+}
+
+.icons-container {
+  display: flex;
+}
